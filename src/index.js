@@ -6,7 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Estudiante />
+    <Estudiante
+      nombre="Matias"
+      apellido="Dmitrowicz"
+      carrera="Licenciatura en Sistemas"
+    />
   </React.StrictMode>,
   document.getElementById("root")
 );

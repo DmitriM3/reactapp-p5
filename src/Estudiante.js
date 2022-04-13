@@ -2,27 +2,15 @@ import React, { Component } from "react";
 import "./Estudiante.css";
 
 export default class Estudiante extends Component {
-  constructor(nombre, apellido, carrera, legajo) {
-    super();
-    this.nombre = nombre;
-    this.apellido = apellido;
-    this.carrera = carrera;
-    this.legajo = legajo;
+  constructor(props) {
+    super(props);
   }
   render() {
-    let mati = new Estudiante(
-      "Matias",
-      "Dmitrowicz",
-      "Licenciatura en Sistemas",
-      "1177"
-    );
-
     return (
       <div className="estilo">
-        <p>Nombre: {mati.nombre}</p>
-        <p>Apellido: {mati.apellido}</p>
-        <p>Carrera: {mati.carrera}</p>
-        <p>Legajo: {mati.legajo}</p>
+        <p>Nombre: {this.props.nombre}</p>
+        <p>Apellido: {this.props.apellido}</p>
+        <p>Carrera: {this.props.carrera}</p>
       </div>
     );
   }
