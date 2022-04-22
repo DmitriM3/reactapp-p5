@@ -3,14 +3,16 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import Estudiante from "./Estudiante";
 import reportWebVitals from "./reportWebVitals";
+import Cursos from "./Cursos";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Estudiante
+    {/* <Estudiante
       nombre="Matias"
       apellido="Dmitrowicz"
       carrera="Licenciatura en Sistemas"
-    />
+    /> */}
+    <Cursos />
   </React.StrictMode>,
   document.getElementById("root")
 );
