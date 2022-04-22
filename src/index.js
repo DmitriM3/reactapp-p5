@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Estudiante from "./Estudiante";
+// import Estudiante from "./Estudiante";
 import reportWebVitals from "./reportWebVitals";
-import Cursos from "./Cursos";
+// import Cursos from "./Cursos";
+import CrearEstudiante from "./CrearEstudiante";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,7 +13,8 @@ ReactDOM.render(
       apellido="Dmitrowicz"
       carrera="Licenciatura en Sistemas"
     /> */}
-    <Cursos />
+    {/* <Cursos /> */}
+    <CrearEstudiante />
   </React.StrictMode>,
   document.getElementById("root")
 );
